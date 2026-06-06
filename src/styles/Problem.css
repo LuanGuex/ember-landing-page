@@ -1,0 +1,8 @@
+.problem {
+    padding: 100px 5%;
+}
+
+.problem__header {
+    text-align: center;
+    max-width: 600px;
+}

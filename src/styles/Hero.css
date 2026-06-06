@@ -1,0 +1,109 @@
+.hero {
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 5% 80px;
+}
+
+.hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(255, 61, 0, 0.12);
+    border: 1px solid rgba(255, 61, 0, 0.3);
+    border-radius: 999px;
+    padding: 6px 16px;
+    margin-bottom: 28px;
+}
+
+.hero__badge span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #ff6b35;
+    letter-spacing: 0.3px;
+}
+
+.hero__headline {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1.05;
+    color: #F5F5F0;
+    margin-bottom: 24px;
+    max-width: 900px;
+    letter-spacing: 1px;
+}
+
+.hero__headline em {
+    color: #FF3D00;
+    font-style: normal;
+}
+
+.hero__subtitle {
+    font-size: clamp(16px, 2vw, 20px);
+    color: #888888;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.hero__ctas {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
+.hero__cta-primary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #FF3D00;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.hero__cta-primary:hover {
+    background-color: #FF6B35;
+    transform: translateY(-1px);
+}
+
+.hero__cta-secondary {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: #F5F5F0;
+    border: 1px solid rgba(245, 245, 240, 0.2);
+    border-radius: 8px;
+    padding: 14px 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    transition: border-color 0.2s ease, transform 0.1s ease;
+}
+
+.hero__cta-secondary:hover {
+    border-color: rgba(255, 61, 0, 0.5);
+    transform: translateY(-1px);
+}
+
+.hero__stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 860px;
+}

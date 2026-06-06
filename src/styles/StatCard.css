@@ -1,0 +1,26 @@
+.stat-card {
+    background-color: #141414;
+    border: 1px solid rgba(255, 61, 0, 0.12);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+    transition: border-color 0.2s ease;
+}
+
+.stat-card:hover {
+    border-color: rgba(255, 61, 0, 0.35);;
+}
+
+.stat-card__number {
+    font-family: 'Anton', sans-serif;
+    font-size: 32px;
+    color: #FF3D00;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.stat-card__label {
+    font-size: 13px;
+    color: #888888;
+    line-height: 1.4;
+}

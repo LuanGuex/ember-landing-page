@@ -1,13 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, Play } from 'lucide-react'
 import '../styles/Hero.css'
-
-const stats = [
-    { number: '+200', label: 'restaurantes atendidos' },
-    { number: '+6', label: 'anos de experiencia' },
-    { number: '3x', label: 'mais retorno médio nos anúncios' },
-    { number: '100%', label: 'foco em food service' },
-]
+import StatCard from './StatCard'
 
 export default function Hero() {
 
@@ -50,8 +44,8 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 0.2 }}
             >
                 A Ember mapeia cada etapa do seu negócio
-                — da conquista do cliente até o retorno dele
-                — e transforma isso em resultado real.
+                da conquista do cliente até o retorno dele
+                e transforma isso em resultado real.
 
             </motion.p>
 
@@ -79,21 +73,10 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.45 }}
             >
-                {stats.map((stat, index) => (
-                    <motion.div
-                    key={index}
-                    className='hero__stat'
-                    initial={{ opacity: 0, y: 20}}
-                    animate={{ opacity: 1, y: 0}}
-                    transition={{ duration: 0.5, delay: 0.5 + index * 0.2}}
-                    >
-                        <div className='hero__stat-number'>{stat.number}</div>
-                        <div className='hero__stat-label'>{stat.label}</div>
-                        
-                    </motion.div>
-
-                ))}
-
+                <StatCard number="+200" label="restaurantes atendidos" delay={0.50} />
+                <StatCard number="+6" label="anos de experiência" delay={0.60} />
+                <StatCard number="3x" label="mais retorno nos anúncios" delay={0.70} />
+                <StatCard number="100%" label="foco em food service" delay={0.80} />
             </motion.div>
 
         </section>

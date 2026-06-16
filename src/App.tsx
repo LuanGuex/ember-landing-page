@@ -7,7 +7,9 @@ import Comparativo from './components/Comparativo'
 import Calculadora from './components/Calculadora'
 import Cases from './components/Cases'
 import Depoimentos from './components/Depoimentos'
-
+import Formulario from './components/Formulario'
+import FAQ from './components/FAQ'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
       <Calculadora />
       <Cases />
       <Depoimentos />
+      <Formulario />
+      <FAQ />
+      <Footer />
     </>
   )
 }

@@ -1,10 +1,7 @@
 [build]
-  base = "ember-landing-page/ember-lp"
   command = "npm run build"
   publish = "dist"
-  functions = "netlify/functions"
 
-# Redirecionamento de todas as rotas para /index.html
 [[redirects]]
   from = "/api/*"
   to = "/.netlify/functions/:splat"

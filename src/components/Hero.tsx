@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { ArrowRight, Play } from 'lucide-react'
 import '../styles/Hero.css'
 import StatCard from './StatCard'
+import heroVideo from '../assets/Video para hero.mp4'
 
 export default function Hero() {
 
@@ -15,6 +16,24 @@ export default function Hero() {
 
     return (
         <section className='hero'>
+
+
+            <video
+                className="hero__video-bg"
+                autoPlay
+                muted
+                loop
+                playsInline
+            >
+                <source src={heroVideo} type="video/mp4" />
+            </video>
+
+      <div className="hero__video-overlay" />
+
+      <div className="hero__content">
+
+
+
             <motion.div
                 className='hero__badge'
                 initial={{ opacity: 0, y: -10 }}
@@ -78,6 +97,8 @@ export default function Hero() {
                 <StatCard number="3x" label="mais retorno nos anúncios" delay={0.70} />
                 <StatCard number="100%" label="foco em food service" delay={0.80} />
             </motion.div>
+
+        </div>
 
         </section>
     )

@@ -72,3 +72,9 @@
   border-color: #FF3D00;
   color: #FF3D00;
 }
+
+@media (max-width: 768px) {
+  .problem__grid {
+    grid-template-columns: 1fr;
+  }
+}

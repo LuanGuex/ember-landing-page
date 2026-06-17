@@ -76,3 +76,9 @@
   background-color: #FF6B35;
   transform: translateY(-1px);
 }
+
+@media (max-width: 768px) {
+  .cases__grid {
+    grid-template-columns: 1fr;
+  }
+}

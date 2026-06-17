@@ -73,3 +73,9 @@
   background-color: #FF6B35;
   transform: translateY(-1px);
 }
+
+@media (max-width: 768px) {
+  .solution__steps {
+    padding: 0 2%;
+  }
+}

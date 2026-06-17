@@ -107,3 +107,24 @@
     width: 100%;
     max-width: 860px;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 5% 60px;
+  }
+
+  .hero__ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__cta-primary,
+  .hero__cta-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

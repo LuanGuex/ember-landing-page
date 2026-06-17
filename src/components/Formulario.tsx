@@ -40,7 +40,7 @@ export default function Formulario() {
     setError(false)
 
     try {
-      const response = await fetch('https://formspree.io/f/SEU_ID_AQUI', {
+      const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

@@ -37,11 +37,11 @@ export default function Footer() {
             </a>
             <a href="mailto:contato@emberagencia.com.br">
               <Mail size={15} />
-              contato@emberagencia.com.br
+              embermarketing.br@gmail.com
             </a>
-            <a href="https://wa.me/5545999999999" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5521959282025" target="_blank" rel="noopener noreferrer">
               <Phone size={15} />
-              (45) 99999-9999
+              (21) 95928-2025
             </a>
           </div>
         </div>

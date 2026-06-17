@@ -3,9 +3,9 @@ import { ArrowRight } from 'lucide-react'
 import CaseCard from './CaseCard'
 import '../styles/Cases.css'
 
-import case1 from '../assets/case1.jpeg'
-import case2 from '../assets/case2.jpeg'
-import case3 from '../assets/case3.jpeg'
+import case1 from '../assets/case1.png'
+import case2 from '../assets/case2.png'
+import case3 from '../assets/case3.png'
 
 const cases = [
     {
@@ -14,10 +14,10 @@ const cases = [
         title: 'De invisível a referência no bairro',
         description: 'Em 60 dias estruturamos o tráfego pago e o processo de retenção. O resultado apareceu na semana 3.',
         metrics: [
-            { value: '+127%', label: 'pedidos no mês' },
-            { value: 'R$4,20', label: 'custo por lead' },
-            { value: '4.8x', label: 'ROAS médio' },
-            { value: '38%', label: 'clientes retornaram' },
+            { value: '114', label: 'compras' },
+            { value: '12.75x', label: 'ROAS médio'},
+            { value: 'R$594,56', label: 'Investimento' },
+            { value: 'R$7.577,73', label: 'Faturamento' },
         ],
     },
     {
@@ -26,22 +26,22 @@ const cases = [
         title: 'Fim de semana lotado todo mês',
         description: 'Mapeamos os horários de baixo movimento e criamos campanhas específicas para cada período.',
         metrics: [
-            { value: '+89%', label: 'faturamento mensal' },
-            { value: '312', label: 'novos clientes' },
-            { value: 'R$6,50', label: 'custo por pedido' },
-            { value: '3.2x', label: 'ROAS médio' },
+            { value: '235', label: 'compras' },
+            { value: '11.74x', label: 'ROAS médio'},
+            { value: 'R$915,82', label: 'Investimento' },
+            { value: 'R$10.752,13', label: 'Faturamento' },
         ],
     },
     {
         image: case3,
-        segment: 'Culinária Japonesa',
+        segment: 'Esfiharia',
         title: 'Ticket médio subiu sem perder cliente',
         description: 'Reposicionamos a comunicação e atraímos o público certo — disposto a pagar pelo que o restaurante entrega.',
         metrics: [
-            { value: '+64%', label: 'ticket médio' },
-            { value: '5.1x', label: 'ROAS médio' },
-            { value: '+203', label: 'novos seguidores/mês' },
-            { value: '41%', label: 'taxa de retorno' },
+            { value: '146', label: 'compras' },
+            { value: '14.33x', label: 'ROAS médio'},
+            { value: 'R$989,12', label: 'Investimento' },
+            { value: 'R$14.178,48', label: 'Faturamento' },
         ],
     },
 ]
@@ -55,6 +55,7 @@ export default function Cases() {
         <section className='cases' id='cases'>
             
             <motion.div
+                className='cases__header'
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0}}
                 transition={{ duration: 0.6 }}

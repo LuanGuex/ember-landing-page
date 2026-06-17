@@ -8,19 +8,19 @@ const steps = [
         number: '01',
         icon: SearchIcon,
         title: 'Mapeamos seu negócio inteiro',
-        description: 'Antes de rodar um único anúncio, a gente entende seu restaurante de verdade — ticket médio, horários de pico, perfil do cliente, diferenciais. Sem isso, qualquer estratégia é chute.',
+        description: 'Antes de rodar um único anúncio, a gente entende seu restaurante de verdade: ticket médio, horários de pico, perfil do cliente, diferenciais. Sem isso, qualquer estratégia é chute.',
     },
     {
         number: '02',
         icon: Megaphone,
         title: 'Atraímos clientes novos com precisão',
-        description: 'Tráfego pago estratégico no Meta e Google direcionado para o cliente certo — não só curtidas, mas pessoas com fome e dinheiro no bolso prontas para ir até você.',
+        description: 'Tráfego pago estratégico no Meta e Google direcionado para o cliente certo. Não só curtidas, mas pessoas com fome e dinheiro no bolso prontas para ir até você.',
     },
     {
         number: '03',
         icon: HeartHandshake,
         title: 'Transformamos visita em fidelidade',
-        description: 'A conquista é só o começo. Criamos fluxos de remarketing e relacionamento para que o cliente que veio uma vez vire frequentador — e ainda indique para os amigos.',
+        description: 'A conquista é só o começo. Criamos fluxos de remarketing e relacionamento para que o cliente que veio uma vez vire frequentador e ainda indique para os amigos.',
     },
     {
         number: '04',

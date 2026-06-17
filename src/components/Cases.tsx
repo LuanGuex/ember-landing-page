@@ -36,7 +36,7 @@ const cases = [
         image: case3,
         segment: 'Esfiharia',
         title: 'Ticket médio subiu sem perder cliente',
-        description: 'Reposicionamos a comunicação e atraímos o público certo — disposto a pagar pelo que o restaurante entrega.',
+        description: 'Reposicionamos a comunicação e atraímos o público certo disposto a pagar pelo que o restaurante entrega.',
         metrics: [
             { value: '146', label: 'compras' },
             { value: '14.33x', label: 'ROAS médio'},

@@ -21,7 +21,7 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
             >
-                <span>🔥 Mêsversário Ember — condições especiais esse mês</span>
+                <span>🔥 Mêsversário Ember: condições especiais esse mês</span>
 
             </motion.div>
 

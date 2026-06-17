@@ -23,11 +23,11 @@ const faqs: FAQItem[] = [
     },
     {
         question: 'O que diferencia a Ember de outras agências?',
-        answer: 'A maioria das agências entrega tráfego pago e para por aí. A Ember mapeia todo o ciclo do seu negócio — da atração ao retorno do cliente. Somos especializados em food service, não atendemos de tudo para todos.',
+        answer: 'A maioria das agências entrega tráfego pago e para por aí. A Ember mapeia todo o ciclo do seu negócio da atração ao retorno do cliente. Somos especializados em food service, não atendemos de tudo para todos.',
     },
     {
         question: 'Como funciona a análise gratuita?',
-        answer: 'Você preenche o formulário, nossa equipe analisa seu perfil e o momento do seu restaurante, e em até 24h entramos em contato com um diagnóstico real — sem enrolação e sem compromisso.',
+        answer: 'Você preenche o formulário, nossa equipe analisa seu perfil e o momento do seu restaurante, e em até 24h entramos em contato com um diagnóstico real" sem enrolação e sem compromisso.',
     },
 ]
 

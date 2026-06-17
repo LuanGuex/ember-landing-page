@@ -70,7 +70,7 @@ export default function Formulario() {
       >
         <div className="formulario__urgencia">
           <span className="formulario__urgencia-dot" />
-          <span>Mêsversário Ember: condições especiais encerram esse mês</span>
+          <span>Mêsversário Ember: condições encerram esse mês</span>
         </div>
 
         <h2 className="formulario__headline">
@@ -190,7 +190,7 @@ export default function Formulario() {
               <textarea
                 id="dificuldade"
                 name="dificuldade"
-                placeholder="Ex: não consigo atrair clientes novos, meu movimento caiu depois da pandemia..."
+                placeholder="Ex: não consigo atrair clientes novos, meu movimento cai durante a semana, nunca investi..."
                 value={formData.dificuldade}
                 onChange={handleChange}
                 rows={4}

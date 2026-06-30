@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import {Mail, Phone } from 'lucide-react'
+import Instagramlogo from '../assets/Instagram.png'
 import Logo from '../assets/Logotipo.png'
 import '../styles/Footer.css'
 
@@ -32,7 +33,7 @@ export default function Footer() {
           <div className="footer__links">
             <h4>Contato</h4>
             <a href="https://instagram.com/embermarketing.food" target="_blank" rel="noopener noreferrer">
-              <Mail size={15} />
+              <img src={Instagramlogo} alt='Instagram'/>
               @embermarketing.food
             </a>
             <a href="mailto:contato@emberagencia.com.br">

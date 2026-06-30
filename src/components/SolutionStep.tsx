@@ -21,7 +21,7 @@ export default function SolutionStep({ number, icon: Icon, title, description, i
 
             <div className='solution-step__content'>
                 <div className='solution-step__icon'>
-                    <Icon size={18} color="FF3D00" />
+                    <Icon size={18} color="#FF3D00" />
                 </div>
                 <h3 className='solution-step__title'>{title}</h3>
                 <p className='solution-step__description'>{description}</p>

@@ -2,19 +2,21 @@ import { motion } from 'framer-motion'
 import TestimonialCard from './TestimonialCard'
 import '../styles/Depoimentos.css'
 import MartLogo from '../assets/Martlogo.jpg'
+import Violattislogo from '../assets/Violattilogo.jpg'
+import Californialogo from '../assets/Californialogo.jpg'
 
 const testimonials = [
   {
-    text: 'Em 2 meses meu delivery triplicou. Antes eu gastava em anúncio e não sabia se voltava. Agora sei exatamente quanto cada real investido traz de volta.',
-    name: 'Marcos Silveira',
-    role: 'Hamburgueria · Curitiba',
-    avatar: 'https://i.pravatar.cc/150?img=12',
+    text: 'Não tenho palavras! Foi a melhor semana da história da minha pizzaria. Os resultados foram incríveis. Muito obrigado!',
+    name: 'Pizzaria Califórnia',
+    role: 'Pizzaria · Piracicaba',
+    avatar: Californialogo,
   },
   {
     text: 'A campanha de dia dos namorados foi bom demais! Já estou pensando nas próximas promoções.',
     name: 'Violattis Pizzaria',
-    role: 'Pizzaria · São Paulo',
-    avatar: 'https://i.pravatar.cc/150?img=45',
+    role: 'Pizzaria · Bambuí',
+    avatar: Violattislogo,
   },
   {
     text: 'Bom dia! Passando para dar os parabéns o primeiro dia, deu muito certo, o remarketing funcionou apareceu clientes antigos, estamos no caminho!',

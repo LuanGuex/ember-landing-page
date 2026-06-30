@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
-import { SearchIcon, Megaphone, HeartHandshake, RefreshCw } from 'lucide-react'
+import { Search, Megaphone, HeartHandshake, RefreshCw } from 'lucide-react'
 import SolutionStep from './SolutionStep'
 import '../styles/Solution.css'
 
 const steps = [
     {
         number: '01',
-        icon: SearchIcon,
+        icon: Search,
         title: 'Mapeamos seu negócio inteiro',
         description: 'Antes de rodar um único anúncio, a gente entende seu restaurante de verdade: ticket médio, horários de pico, perfil do cliente, diferenciais. Sem isso, qualquer estratégia é chute.',
     },

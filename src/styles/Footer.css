@@ -57,6 +57,11 @@
   gap: 12px;
 }
 
+.footer__links a img {
+    width: 16px;
+    height: 16px;
+}
+
 .footer__links h4 {
   font-family: 'Inter', sans-serif;
   font-size: 12px;

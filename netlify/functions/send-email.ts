@@ -9,6 +9,7 @@ interface FormPayload {
   segmento: string
   faturamento: string
   dificuldade?: string
+  captchaToken: string
 }
 
 const ALLOWED_ORIGIN = process.env.ALLOWED_ORIGIN ?? ""
@@ -45,7 +46,7 @@ const handler: Handler = async (event: HandlerEvent) => {
     }
   }
 
-  const { nome, email, whatsapp, empresa, segmento, faturamento, dificuldade } = payload
+  const { nome, email, whatsapp, empresa, segmento, faturamento, dificuldade, captchaToken } = payload
 
   if (!nome?.trim() || !email?.trim() || !whatsapp?.trim()) {
     return {
@@ -61,6 +62,41 @@ const handler: Handler = async (event: HandlerEvent) => {
       statusCode: 422,
       headers: corsHeaders(origin),
       body: JSON.stringify({ error: "E-mail inválido." }),
+    }
+  }
+
+  // Validação do reCAPTCHA
+  if (!captchaToken) {
+    return {
+      statusCode: 422,
+      headers: corsHeaders(origin),
+      body: JSON.stringify({ error: "Verificação de segurança ausente." }),
+    }
+  }
+
+  try {
+    const recaptchaResponse = await fetch("https://www.google.com/recaptcha/api/siteverify", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: `secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${captchaToken}`,
+    })
+
+    const recaptchaData = await recaptchaResponse.json()
+
+    if (!recaptchaData.success || recaptchaData.score < 0.5) {
+      console.error("reCAPTCHA falhou:", recaptchaData)
+      return {
+        statusCode: 403,
+        headers: corsHeaders(origin),
+        body: JSON.stringify({ error: "Falha na verificação de segurança." }),
+      }
+    }
+  } catch (error) {
+    console.error("Erro ao validar reCAPTCHA:", error)
+    return {
+      statusCode: 500,
+      headers: corsHeaders(origin),
+      body: JSON.stringify({ error: "Erro na verificação de segurança." }),
     }
   }
 

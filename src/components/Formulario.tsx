@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
 import { ArrowRight, Loader2 } from 'lucide-react'
 import '../styles/Formulario.css'
 
@@ -14,6 +15,8 @@ interface FormData {
 }
 
 export default function Formulario() {
+  const { executeRecaptcha } = useGoogleReCaptcha()
+
   const [formData, setFormData] = useState<FormData>({
     nome: '',
     email: '',
@@ -39,11 +42,19 @@ export default function Formulario() {
     setLoading(true)
     setError(false)
 
+    if (!executeRecaptcha) {
+      setError(true)
+      setLoading(false)
+      return
+    }
+
     try {
+      const captchaToken = await executeRecaptcha('submit_form')
+
       const response = await fetch('/api/send-email', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, captchaToken }),
       })
 
       if (response.ok) {
